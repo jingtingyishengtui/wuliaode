@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8"/>
+		<title>复习</title>
+		<style>
+		    #lz{
+		    	font-size:20px;
+		    	color:red;
+		    }
+		    p{
+		    	color:blue;
+		    	font-size:14px;
+		    }
+		    .red{
+		    	font-size:14px;
+		    	color:red;
+		    }
+		    #r{
+		    	color:red;
+		    }
+		    #list li{
+		    	list-style:none;
+		    }
+		    #h{
+		    	font-family:华文行楷;
+		    }
+		    #font{
+		    	font-size:20px;
+		    }
+		    #st{
+		    	font-style:italic;
+		    }
+		    #we{
+		    	font-weight:bolder;
+		    }
+	    </style>
+	</head>
+	<body bgcolor ="pink">
+		互联网：是指由计算机网络连接而成的网络，即“互联网”<br/>
+		万维网：是一个由许多相互链接的超文本组成的系统，通过互联网访问<br/>
+		Web浏览器：显示页面内容，并让用户与这些文件交互的一种软件。<br/>
+		Web服务器  <br/>
+		  1.物理设备：提供Web服务的计算机<br/>
+		  2.软件：根据用户请求将信息资源传递给用户的应用程序<br/>
+		  3.常用Web服务器：Apache和ngix服务器<br/>
+		<span style ="color:red">URL(Uniform Resource Locator 统一资源定位符)</span>:组成部分：协议、服务器地址（域名）、资源路径<br/>
+		B/S架构（Brower/Server）：通过浏览器访问的网络应用程序<br/>
+		C/S架构（Client/Server）：通过客户端应用软件访问的网络应用程序<br/>
+		特点：<br/>
+		B/S:<br/>
+		   1.无需安装特定客户端程序,通过URL访问<br/>
+		   2.跨平台能力<br/>
+		   3.无缝升级，客户端免维护<br/>
+		   4.不能直接使用客户端硬件资源，用户体验单一<br/>
+		C/S架构<br/>
+		   1.需要安装特定用户端程序<br/>
+		   2.针对不同平台开发不同版本<br/>
+		   3.升级应用需重新安装<br/>
+		   4.能够直接使用客户端硬件资源<br/>
+		Web系统开发过程<br/>
+		   项目提出->需求分析->UI设计->系统设计->前端开发->后台开发->系统测试->发布/维护<br/>
+		网页浏览过程：<br/>
+		   1.通过输入网址指定要访问的网页<br/>
+		   2.发送请求<br/>
+		   3.得到响应<br/>
+		   4.浏览器“解释”网页文件，呈现网页<br/>
+		网页文件:浏览器中看到的网页实质  1.文本文件  2.扩展名为html.或htm  3.文件内容为HTML代码和文本内容<br/>
+		简介HTML：（Hyper Text Markup Language）<span style ="color:red">超文本标记语言</span><br/>
+		HTML不是一种编程语言，而是一种标记语言<br/>
+		要点：词汇，语法，语义<br/>
+		HTML标签：是由尖括号包围的关键词<br/>
+		标签的分类： 双标签：由“开始标签”和“结束标签”两部分构成，必须成对使用  单标签：再开始标签中进行关闭，及以开始标签的结束而结束<br/>
+		双标签：代表标签作用范围；单标签：无需表达范围，仅在标签出现处有效。<br/>
+		HTML元素指的是从开始标签到结束标签的所有代码<br/>
+		标签与标签之间是可以嵌套的，但先后书序必须保持一致<br/>
+		HTML标签对大小写不敏感，但是<span style ="color:red">建议统一规范小写</span><br/>
+		<p>HTML标签可以拥有属性————辅助标签提供更多信息
+			属性书写形式：name =“value”<br/>
+			属性书写位置：开始标签<br/>
+		    不同标签具有不同属性<br/>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgcolor:规定文档的背景颜色<br/>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text:规定文档中所有文本的颜色<br/>
+		    例：body bgcolor ="pink" text ="blue"     /body
+		</p>
+		<h2>网页元素是指构成网页的各项内容</h2>
+		标题————在HTML文档中，一篇文章需要标题<br/>
+		<h4>h4&nbsp;h1&nbsp;-&nbsp;h6&nbsp;/h4</h4>
+		在浏览器中，标题独占一行<br/>
+		最多只有h6<br/>
+		段落————网页中显示一段文字<br/>
+		<p>p 元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定/p</p>
+		<h2>图片————网页中显示一张图片</h2>
+		<p>img/<br/>
+		属性：<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src:指明存储图像的位置<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt:为图片添加替换文本<br/>
+	    例：img src ="images/logo.gif"&nbsp;alt ="我是logo"/</p>
+	    <h5>图片路径</h5>
+	    <p>绝对路径<br/>
+	    &nbsp;&nbsp;本机绝对路径:从盘符开始的完整路径<br/>
+	    例：e:\my_site\web\image\a.png<br/>
+	    &nbsp;&nbsp;网络绝对路径：网络可访问地址<br/>
+	    例：http://www.a.com/image/a.png<br/>
+	    <span style ="font-size:19px">两者的优缺点</span><br/>
+	    &nbsp;&nbsp;优点：真实路径，定位清晰<br/>
+	    &nbsp;&nbsp;缺点：本机绝对路径长，容易出错；如果站点文件夹被移动，就需要重新修改路径<br/>
+	    <span style ="color:red">不推荐使用本机绝对路径</span><br/>
+	    &nbsp;&nbsp;相对路径：相对当前文件或目录的路径<br/>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相对路径规则:<br/>
+	    <ol>
+	    	<li>图片和网页在同级目录&nbsp;&nbsp;src ="./图片名"</li>
+	    	<li>图片在网页的下一级目录&nbsp;&nbsp;src ="目录名称/图片名"</li>
+	    	<li>图片在网页的上一级目录&nbsp;&nbsp;src -"../图片名"</li>
+	    </ol>
+	    例：img src ="图片/bai.jpg"/&nbsp;&nbsp;<img src ="图片/bai.jpg"/><br/>
+	    &nbsp;&nbsp;&nbsp;&nbsp;优点：文件夹被移动，其内部文件的相对路径不变</p>
+	    <p>注意事项
+	    	<ul style ="color:red">
+	    		<li>不要使用本机绝对路径，推荐使用相对路径</li>
+	    		<li>图片文件单独存放在一个文件夹中</li>
+	    		<li>图片文件夹与页面文件放在同一个目录下</li>
+	    	</ul>
+	    </p>
+	    <h2>超链接————从一个网页指向一个目标的链接关系</h2>
+	    <p>例：a href ="链接目标"&nbsp;链接对象&nbsp;/a&nbsp;&nbsp;
+	    	<a href ="图片/bai.jpg">还是那张图</a><br/>
+	    	适合用来制作超链接的内容：导航、推荐图文、友情链接等。<br/>
+	    	链接目标：另一个网页、图片等。<br/>
+	    	必选<span style ="color:red">属性</span>:href,创建指向另一个文档的连接<br/>
+	    	属性<br/>
+	    	&nbsp;&nbsp;&nbsp;href:规定链接目标（连接的目标URL）<br/>
+	    	&nbsp;&nbsp;&nbsp;target:在何处打开目标
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul>
+	    		<li>_blank:在新窗口打开</li>
+	    		<li>_self:在当前窗口打开（默认）</li>
+	    	</ul>
+	    	例:<br/>
+	    	a href ="demo1.html"HTML中的六级标题/a&nbsp;&nbsp;
+	    	<a href ="demo1.html">HTML中的六级标题</a><br/>
+	    	a href ="http://www.baidu.com" target ="_blank"
+	    	&nbsp;&nbsp;&nbsp;img src ="图片/bai.jpg" alt ="Bai Jingting"/<br/>
+	    	/a<br/>
+	    	<a href ="http://www.baidu.com" target ="_blank">
+	    		<img src ="图片/bai.jpg" alt ="Bai Jingting"/>
+	    	</a>
+	    	<-点击图片<br/>
+	    	<h2>列表————HTML支持无序列表、有序列表</h2>
+	    	<p>无序列表：是一个没有前后顺序的信息列表<br/>
+	    	有序列表：是一个有前后顺序的信息列表</p>
+	    	<h5>无序列表</h5>
+	    	<ul>
+	    		<li>无序列表使用&nbsp;ul&nbsp;标签。每个列表项使用&nbsp;li&nbsp;标签</li>
+	    		<li>每个列表项默认使用<span style ="color:red">粗体圆点</span>进行标记</li>
+	    		<li>列表项内部可以使用段落、换行符、图片、超链接以及其他列表等</li>
+	    		<li>代码：<br/>
+	    			ul<br/>
+	    			&nbsp;&nbsp;&nbsp;li&nbsp;/li<br/>
+	    			/ul
+	    		</li>
+	    	</ul>
+	    	<h5>有序列表</h5>
+	    	<ol>
+	    		<li>有序列表使用 <ol> 标签，每个列表项使用 <li>标签。</li>
+	    		<li>每个列表项默认使用数字进行标记。</li>
+	    		<li>列表项内部可以使用段落、换行符、图片、链接以及其他列表等。</li>
+	    		<li>代码：<br/>
+	    			ol<br/>
+	    			&nbsp;&nbsp;&nbsp;li&nbsp;/li<br/>
+	    			/ol
+	    		</li>
+	    	</ol>
+	    	<h2 style ="color:red">注意事项与编码规范</h2>
+	    	<h5>注意事项</h5>
+	    	<p>文件的扩展名要以.html或者.htm结束<br/>
+	    		文件名由<span style ="color:red">英文字母、数字或下划线</span>组成<br/>
+	    		文件名中不要包含<span style ="color:red">特殊符号</span>,比如空格、$等，
+	    		<span style ="color:red">不使用中文</span></p>
+	    	<h5>编码规范</h5>
+	    	<p>所有的标签<span style ="color:red">必须关闭</span><br/>
+	    		所有标签和其属性的名字都必须使用<soan style ="color:red">小写</soan><br/>
+	    		所有的标签都必须<span style ="color:red">合理嵌套</span><br/>
+	    		所有的属性<span style ="color:red">必须赋值</span>,所有的属性值必须用<span style ="color:red">引号</span>括起来</p>
+	    	<h1>本节小结</h1>
+	    	<ul>
+	    		<li>理解网页文件<span style ="color:red">请求过程</span>
+	    		和浏览器“解释”文件</li>
+	    		<li>HTML基础语法，三要素“<span style ="color:red">词汇、语法、语义</span>”</li>
+	    		<li style ="color:red">网页文件结构和单双标签</li>
+	    		<li>段落标签&nbsp;p&nbsp;和标题标签&nbsp;h1&nbsp;</li>
+	    		<li>图片标签&nbsp;img&nbsp;src相对路径和绝对路径</li>
+	    		<li>超链接标签&nbsp;a&nbap;、有序列表&nbsp;ol&nbsp;、
+	    		无序列表&nbsp;ul&nbsp;</li>
+	    		<li>注意事项和编码规范</li>
+	    	</ul>
+	    	<h2>表格</h2>
+	    	<p>表格相关标签<br/>
+	    		<ul>
+	    			<li>table&nbsp;/table:<br/>
+	    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语法：1.成对出现
+	    		2.表格的开始和结束位置<br/>
+	    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语义：定义一个“表格”</li>
+	    		    <li>tr&nbsp;/tr:<br/>
+	    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语法：1.成对出现
+	    		2.嵌套于table&nbsp;/table标签内<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语义：定义表格中的“一行”</li>
+	    	        <li>th&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语法：1，成对出现
+	    	   	2.嵌套于tr&nbsp;/tr标签内
+	    	   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语义：定义“表头”（特殊的单元格）</li>
+	    	        <li>td&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语法：1.成对出现
+	    	    2.嵌套于tr&nbsp;/tr标签内<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语义：定义表格中的“一个单元格”</li>
+	    	    </ul>
+	    	    相关属性：
+	    	    <ol>
+	    	    	<li>border:表格边框宽度（pixels)</li>
+	    	    	<li>bordercolor：表格边框的颜色</li>
+	    	    	<li>background：表格背景图</li>
+	    	    	<li>bgcolor：表格背景颜色</li>
+	    	    	<li>cellpadding：单元边沿与其内容之间的距离（pixels）</li>
+	    	    	<li>cellapacing：单元格之间的空白（pixels）</li>
+	    	    	<li>width：规定表格元素的宽度（pixels或%）</li>
+	    	    	<li>height：规定表格元素的高度（pixels或%）</li>
+	    	    	<li>align：表格的对齐方式（left center right）</li>
+	    	    </ol>
+	    	    例：
+	    	     代码：<br/>
+	    	    table border ="1" cellpadding ="20" cellspacing ="40" <br/>
+	    	    align ="center" width ="30px" height ="50px" border ="2px"<br/> 
+	    	    bordercolor ="blue" bgcolor ="#fff"<br/>
+	    	    &nbsp;&nbsp;&nbsp;tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;性名&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;年龄&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;成绩&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;/tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;李思白&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;20&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;100&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;/tr<br/>
+	    	    /table
+	    	    <table border ="1" cellpadding ="20" cellspacing ="40" 
+	    	    align ="center" width ="30px" height ="50px" border ="2px" 
+	    	    bordercolor ="blue" bgcolor ="#fff">
+	    	    	<tr>
+	    	    		<th>性名</th>
+	    	    		<th>年龄</th>
+	    	    		<th>成绩</th>
+	    	    	</tr>
+	    	    	<tr>
+	    	    		<td>李思白</td>
+	    	    		<td>20</td>
+	    	    		<td>100</td>
+	    	    	</tr>
+	    	    </table>
+	    	    <p>单元格合并<br/>
+	    	    	跨列：colspan<br/>
+	    	    	跨行：rowspan<br/>
+	    	    <h5>单元格合并————跨列</h5>
+	    	    例：
+	    	      代码<br/>
+	    	    table border ="2px"<br/>
+	    	    &nbsp;&nbsp;&nbsp;tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;姓名&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;年龄&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;成绩&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;/tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;李思白&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;
+	    	    <span style ="color:red"> colspan ="2"</span>&nbsp;20&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;/tr
+	    	    /table
+	    	    <table border ="2px">
+	    	    	<tr>
+	    	    		<th>姓名</th>
+	    	    		<th>年龄</th>
+	    	    		<th>成绩</th>
+	    	    	</tr>
+	    	    	<tr>
+	    	    		<td>李思白</td>
+	    	    		<td colspan ="2">20</td>
+	    	    	</tr>
+	    	    </table>
+	    	    <h5>单元格合并————跨行</h5>
+	    	    例：
+	    	      代码<br/>
+	    	    table border ="2px"<br/>
+	    	    &nbsp;&nbsp;&nbsp;tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;姓名&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;年龄&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th&nbsp;成绩&nbsp;/th<br/>
+	    	    &nbsp;&nbsp;&nbsp;/tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td
+	    	    <span style ="color:red"> rowspan ="2"</span>&nbsp;李思白&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;&nbsp;20&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;&nbsp;100&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;/tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;tr<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;&nbsp;18&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td&nbsp;&nbsp;89&nbsp;/td<br/>
+	    	    &nbsp;&nbsp;&nbsp;/tr<br/>
+	    	    /table
+	    	    <table border ="2px">
+	    	    	<tr>
+	    	    		<th>姓名</th>
+	    	    		<th>年龄</th>
+	    	    		<th>成绩</th>
+	    	    	</tr>
+	    	    	<tr>
+	    	    		<td rowspan ="2">李思白</td>
+	    	    		<td>20</td>
+	    	    		<td>100</td>
+	    	    	</tr>
+	    	    	<tr>
+	    	    		<td>18</td>
+	    	    		<td>89</td>
+	    	    	</tr>
+	    	    </table>
+	    	    </p>
+	    	</p>
+	    	<h2>表单</h2>
+	    	<span style ="color:red">表单是一个包含表单元素的区域。</span>表单元素是允许用户在表单中输入信息的元素.(比如：文本框、下拉列表、单选框、复选框等等)<br/>
+	    	其作用是从访问网站的用户那里获得信息，是
+	    	<span style ="color:red">用户向服务器传输数据的接口</span><br/>
+	    	<p>表单控件<br/>
+	    		form&nbsp;/form<br/>
+	    		&nbsp;&nbsp;&nbsp;语法：1.成对出现
+	    		2.表单的开始和结束位置<br/>
+	    		&nbsp;&nbsp;&nbsp;语义：定义一个“表单”<br/>
+	    		&nbsp;&nbsp;&nbsp;相关属性：
+	    		<ul>
+	    			<li>action：规定向何处发送提交的表单数据。值：URL</li>
+	    			<li>method：规定以何种方式将表单数据传送到服务器。值：get/post</li>
+	    		</ul>
+	    	<span style ="color:red">所有表单控件</span>都必须放在
+	    	form&nbsp;/form标签之间，否则用户输入的信息无法提交到服务器！</p>
+	    	<h4>&nbsp;input&nbsp;标签</h4>
+	    	<ul>
+	    		<li>文本框：当用户要在表单中键入字母、数字等内容时，就会用到文本框<br/>
+	    			form<br/>
+	    			&nbsp;&nbsp;input type ="text" name ="名称" value ="文本"/<br/>
+	    			/form<br/>
+	    			<ol>
+	    				<li>type：当type ="text"时，输入框为文本输入框。</li>
+	    				<li>name：为输入框命名，以备后台程序使用</li>
+	    				<li>value：为输入框设置默认值（一般起到提示作用）</li>
+	    			</ol>
+	    			例：
+	    			<form>
+	    				First name:
+	    				<input type ="text" name ="firstname"/><br/>
+	    				Last name:
+	    				<input type ="text" name ="lastname"/>
+	    			</form>
+	    		</li>
+	    		<li>密码框：当用户要在表单中键入密码时，就会用到密码框<br/>
+	    			form<br/>
+	    			&nbsp;&nbsp;input type ="password" name ="名称" value ="文本"/<br/>
+	    			/form<br/>
+	    			<ol>
+	    				<li>type：当type ="password"时，输入框为密码输入框。</li>
+	    				<li>name：为输入框命名，以备后台程序使用</li>
+	    				<li>value：为输入框设置默认值（一般起到提示作用）</li>
+	    			</ol>
+	    			例：
+	    			<form>
+	    				密码：
+	    				<input type ="password" name ="pass"/>
+	    			</form>
+	    		</li>
+	    		<li>单选框<br/>
+	    			form<br/>
+	    			&nbsp;&nbsp;input type ="radio" value ="Male" 
+	    			name ="sex" checked/ &nbsp;&nbsp;男<br/>
+	    			&nbsp;&nbsp;input type ="radio" value ="feMale"
+	    			name ="sex"/&nbsp;&nbsp;女<br/>
+	    			/form<br/>
+	    			<ol>
+	    				<li>type：当type ="radio"时，控件为单选框。</li>
+	    				<li>value：提交数据到服务器的值</li>
+	    				<li>name：为控件命名，<span style ="color:red">
+	    				同组单选框name属性值必须相同</span></li>
+	    				<li>checked：当添加checked时，该选项默认选中</li>
+	    			</ol>
+	    			例：
+	    			<form>
+	    				<input type ="radio" value ="Male" name ="sex" checked/>男
+	    				<input type ="radio" value ="feMale" name ="sex"/>女<br/>
+	    			</form>
+	    		</li>
+	    		<li>复选框<br/>
+	    			form<br/>
+	    			&nbsp;&nbsp;input type ="checkbox" value ="good1" name ="goods"/>
+	    			little bai
+	    			&nbsp;&nbsp;input type ="checkbox" value ="good2" name ="goods"/>
+	    			Bai Jingting
+	    			/form<br/>
+	    			<ol>
+	    				<li>type：当type ="checkbox"时，控件为复选框。</li>
+	    				<li>value：提交数据到服务器的值</li>
+	    				<li>name：为控件命名，<span style ="color:red">
+	    				同组复选框name属性值需要一致</span></li>
+	    				<li>checked：当添加checked时，该选项默认选中</li>
+	    			</ol>
+	    			例：
+	    			<form>
+	    				<input type ="checkbox" value ="good1" name ="goods"/>
+	    				little bai
+	    				<input type ="checkbox" value ="good2" name ="goods"/>
+	    				Bai Jingting
+	    			</form>
+	    		</li>
+	    		<li>文件控件：当type属性值为file时，用于文件上传<br/>
+	    			form<br/>
+	    			&nbsp;&nbsp;input type ="file" name ="file"/<br/>
+	    			/form<br/>
+	    			例：
+	    			<from>
+	    				<input type ="file" name ="files"/>
+	    			</from>
+	    		</li>
+	    		<li>按钮<br/>
+	    			<ul>
+	    				<li>提交按钮：type ="submit"<br/>
+	    					提交表单信息到服务器<br/></li>
+	    				<li>重置按钮：type ="reset"<br/>
+	    					重置表单信息至初始状态<br/></li>
+	    			    <li>普通按钮：type ="button"</li>
+	    			</ul>
+	    			例：<br/>
+	    			form<br/>
+	    			&nbsp;&nbsp;input type ="submit" value ="提交" name ="sub"/<br/>
+	    			&nbsp;&nbsp;input type ="reset" value ="重置" name ="res"/<br/>
+	    			&nbsp;&nbsp;input type ="button" value ="按钮" name ="but"/<br/>
+	    			form<br/>
+	    			<form>
+	    				<input type ="submit" value ="提交" name ="sub"/>
+	    				<input type ="reset" value ="重置" name ="res"/>
+	    				<input type ="button" value ="按钮" name ="but"/>
+	    			</form>
+	    		</li>
+	    	</ul>
+	    	<h5>表单标签总结一</h5>
+	    	input 用于搜集用户信息，输入类型是由类型属性（type）定义的<br/>
+	    	&nbsp;&nbsp;在HTML中，input是单标签<br/>
+	    	&nbsp;&nbsp;type规定了input元素的类型<br/>
+	    	<h4>&nbsp;textarea&nbsp;标签</h4>
+	    	多行文本域<br/>
+	    	textarea&nbsp;textarea<br/>
+	    	相关属性：<br/>
+	    	<ul>
+	    		<li>rows：规定文本区内可见行数</li>
+	    		<li>cols：规定文本区内可见列数</li>
+	    	</ul>
+	    	例：<br/>
+	    	form<br/>
+	    	&nbsp;&nbsp;textarea name ="cat" rows ="3" cols ="30" <br/>
+	    	The cat was playing in the garden.<br/>
+	    	/textarea<br/>
+	    	form<br/>
+	    	<form>
+	    		<textarea name ="cat" rows ="3" cols ="30">The cat was playing in the garden.
+	    		</textarea>
+	    	</form>
+	    	<h4>&nbsp;select&nbsp;标签</h4>
+	    	下拉列表<br/>
+	    	&nbsp;&nbsp;标签：select&nbsp;/select<br/>
+	    	&nbsp;&nbsp;列表项：option&nbsp;/option<br/>
+	    	例：<br/>
+	    	form<br/>
+	    	&nbsp;&nbsp;select name ="class"<br/>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;option value ="one" selected&nbsp;软件一班&nbsp;/option<br/>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;option value ="two"&nbsp;软件二班&nbsp;/option<br/>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;option value ="three" &nbsp;软件三班&nbsp;/option
+	    	&nbsp;&nbsp;/select
+	    	/form<br/>
+	    	<form>
+	    		<select name ="class">
+	    			<option value ="one" selected>软件一班</option>
+	    			<option value ="two">软件二班</option>
+	    			<option value ="three">软件三班</option>
+	    		</select>
+	    	</form>
+	    	<h5>表单标签总结二</h5>
+	    	<table border ="1px" bordercolor ="black">
+	    	    <tr>
+	    		    <th align ="center">标签</th>
+	    		    <th align ="center">描述</th>
+	    		    <th align ="center">属性</th>
+	        	</tr>
+	        	<tr>
+	    	    	<td>textarea</td>
+	    		    <td><ol>
+	    			    <li>用于插入多行文本域</li>
+	    			    <li>双标签</li>
+	    	    	</ol></td>
+	    	    	<td><ul>
+	    		    	<li>rows：规定文本区内的可见行数</li>
+	    		    	<li>cols：规定文本区内的可见宽度</li>
+	    	    	</ul></td>
+	        	</tr>
+	        	<tr>
+	    	    	<td>select</td>
+	    	    	<td><ol>
+	    		    	<li>用于创建下拉菜单控件</li>
+	    		    	<li>必须有开始标签和结束标签</li>
+	    	    	</ol></td>
+	    	    	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name：指定控件名称</td>
+	        	</tr>
+	        	<tr>
+	    	    	<td>option</td>
+	    	    	<td><ol>
+	    		    	<li>用于定义列表中的可用选项</li>
+	    		    	<li>option元素位于select元素内部</li>
+	    		    	<li>双标签</li>
+	    	    	</ol></td>
+	    	    	<td><ul>
+	    		    	<li>value：指定选项值</li>
+	    		    	<li>selected：默认选中选项</li>
+	    	    	</ul></td>
+	        	</tr>
+	        </table>
+	        <h1>本章总结</h1>
+	        <ul>
+	        	<li>表格的相关HTML标签及属性</li>
+	        	<li>表单的相关HTML标签及属性</li>
+	        </ul>
+	        <h1>正式进入css的复习之中</h1>
+	        <h2>css简介</h2>
+	        <p>css概述<br/>
+	        	css是Cascading Style Sheet的缩写。译作<span style ="color:red">层叠样式表</span><br/>
+	        	css是用于（增强）控制网页样式并允许将样式与网页内容分离的一种标记性语言<br/>
+	        	单纯HTML方法控制元素样式的缺点：
+	        	<ul>
+	        		<li>针对元素样式设置的属性太少</li>
+	        		<li>修改元素样式太麻烦</li>
+	        		<li>控制元素样式的代码冗余度过高</li>
+	        	</ul>
+	        </p>
+	       	<h3>css基础语法</h3>
+	       		css代码是由一条条语句构成，而每一条语句的结构，都基本相同<br/>
+	       		<p>css语法： 选择器 { 属性：属性值；属性：属性值；......}<br/>
+	       		<ol>
+	       			<li>选择器</li>
+	       			<li>大括号</li>
+	       			<li>属性：属性值(属性之间用；分隔）</li>
+	       		</ol>
+	       		例：<br/>
+	       		#lz{
+	       		  font -size:20px;
+	       		  color:red;
+	       	    }<br/>
+	       	    p id ="lz"&nbsp;这是一个例子&nbsp;/p<br/>
+	       	    <p id ="lz">这是一个例子</p>
+	       	    选择器：规定该选择器定义的样式将对哪些元素生效<br/>
+	       	    <ul>
+	       	    	<li>标签选择器————选择器是HTML标签<br/>
+	       	    		例：<br/>
+	       	    		p {color:red;font-size:14px}<br/>
+	       	    		p&nbsp;这是第一段话&nbsp;/p
+	       	    		<p>之前的段落也一起改变</p>
+	       	    	    影响整个页面中该种标签的样式
+	       	    	</li>
+	       	    	<li>类选择器————以"<span style ="red">.</span>"开头定义的选择器<br/>
+	       	    		例：<br/>
+	       	    		.red{color:red;font-size:14px;}<br/>
+	       	    		p class ="red"&nbsp;这是个例子&nbsp;p<br/>
+	       	    		<p class ="red">这是例子</p>
+	       	    		影响所有以class属性引用该类的标签样式<br/>
+	       	    		<span style ="color:red">注意</span>:类名的第一个字符不能使用数字！<br/>
+	       	    	    元素可以加入多个类。把各个类名放在class属性中，各个类名之间用一个空格分隔，类名的顺序并不重要<br/>
+	       	    	    例：p class ="bluep redp"&nbsp;小例子&nbsp;/p
+	       	    	</li>
+	       	    	<li>ID选择器————以“<span style ="red">#</span>”开头定义的选择器<br/>
+	       	    		#red{color:red;font-size:14px}<br/>
+	       	    		p id ="r"&nbsp;没错，又是个例子&nbsp;/p<br/>
+	       	    		<p id ="r">没错，又是个例子</p>
+	       	   			影响以id属性引用该选择符的标签样式<br/>
+	       	   			<span style ="color:red">注意</span>:单一页面中，一个id选择器只能使用一次!<br/>
+	       	   		</li>
+	       	   	</ul></p>
+	       	   	<h4>选择器总结</h4>
+	       	   	<table border ="1px" cellpadding ="0" cellspacing ="0">
+	       	   		<tr>
+	       	   			<th> </th>
+	       	   			<th>定义方法</th>
+	       	   			<th>引用方法</th>
+	       	   			<th>与元素对应关系</th>
+	       	   		</tr>
+                    <tr>
+	       	   			<td>标签选择器</td>
+	       	   			<td>html标签</td>
+	       	   			<td>直接引用</td>
+	       	   			<td>一对多</td>
+	       	   		</tr>
+	       	   		<tr>
+	       	   			<td>类选择器</td>
+	       	   			<td>.自定义</td>
+	       	   			<td>class =""</td>
+	       	   			<td>多对多</td>
+	       	   		</tr>
+	       	   		<tr>
+	       	   			<td>id选择器</td>
+	       	   			<td>#自定义</td>
+	       	   			<td>id =""</td>
+	       	   			<td>一对一</td>
+	       	   		</tr>
+	       	   	</table>
+	       	   	<p>样式<br/>
+	       	   		将CSS样式与HTML的内容整合有三种方式：<br/>
+	       	   		<ul>
+	       	   			<li>行内样式————在元素标签内通过style属性添加样式<br/>
+	       	   				例：
+	       	   				<br/><标签 style ="属性：属性值；属性：属性值；..."><br/>
+	       	   				h1 style ="color:#00FC00"&nbsp;将河北中学首页嵌入到此网页中&nbsp;/h1<br/>
+	       	   				<h1 style ="color:#00FC00">将河北中学首页嵌入到此网页中</h1>
+	       	   				用途：指定网页中个别元素的显示效果。<span style ="color:red">不符合样式与内容分离原则</span>,不推荐使用
+	       	   			</li>
+	       	   			<li>页内样式————在head部分的style标签内添加样式<br/>
+	       	   				代码：<br/>
+	       	   				head<br/>
+	       	   				&nbsp;style type ="text/css"><br/>
+	       	   				&nbsp;&nbsp;p{color:red;}<br/>
+	       	   				&nbsp;&nbsp;.green{color:green}<br/>
+	       	   				&nbsp;&nbsp;#one{color:yellow;}<br/>
+	       	   				用途：对页面中某些标签或元素设置样式风格。<span style ="color:red">控制当前页面样式，维护较困难</span><br/>
+	       	   			</li>
+	       	   			<li>外部样式————引用外部建立的.css文件<br/>
+	       	   				代码：<br/>
+	       	   				head<br/>
+	       	   				&nbsp;&nbsp;link rel ="stylesheet" type ="text/css" href ="样式文件路径"<br/>
+	       	   				/head<br/>
+	       	   				用途：<span style ="color:red">可同时控制多个页面</span>,适用于各类大型网站，<span style ="color:red">可用性最强</span>推荐使用
+	       	   			</li>
+	       	   		</ul></p>
+	       	   		<h4>样式总结</h4>
+	       	   		<table border ="1px" cellpadding ="0" cellspacing ="0">
+	       	   			<tr>
+	       	   				<th> </th>
+	       	   				<th>优点</th>
+	       	   				<th>缺点</th>
+	       	   				<th>用途</th>
+	       	   			</tr>
+	       	   			<tr>
+	       	   				<td>行内样式</td>
+	       	   				<td>使用灵活</td>
+	       	   				<td>只能控制单一标签，不易维护，代码冗余度高</td>
+	       	   				<td>为网页中特殊标签进行样式设置时使用</td>
+	       	   			</tr>
+	       	   			<tr>
+	       	   				<td>页内样式</td>
+	       	   				<td>同一页面可使用多次</td>
+	       	   				<td>作用范围仅限于定义的页面，其他页面无法使用</td>
+	       	   				<td>对特殊的页面设置单独的样式风格</td>
+	       	   			</tr>
+	       	   			<tr>
+	       	   				<td>外部样式</td>
+	       	   				<td>可作用于多个页面，减少重复工作量，方便后期维护</td>
+	       	   				<td> </td>
+	       	   				<td>适用于各类网站</td>
+	       	   			</tr>
+	       	   		</table>
+	       	   		<h5>样式优先级：</h5>
+	       	   			<ul>
+	       	   				<li>ID选择器&nbsp;&nbsp;>&nbsp;&nbsp;类选择器
+	       	   					&nbsp;&nbsp;>&nbsp;&nbsp;标签选择器
+	       	   				</li>
+	       	   				<li>行内样式&nbsp;&nbsp;>&nbsp;&nbsp;页内样式
+	       	   					&nbsp;&nbsp;>&nbsp;&nbsp;外部样式
+	       	   				</li>
+	       	   			    <li>就近原则，距离元素最近的样式优先级最高</li>
+	       	   			</ul>
+	       	   			<h5>继承</h5>
+	       	   			<ul>
+	       	   				<li>css样式的叠加：
+	       	   					多个样式，在同一内容上共同实现
+	       	   				</li>
+	       	   				<li>css样式的可继承性：
+	       	   					文档中的某些元素，将沿用为其父元素所设置的样式
+	       	   				</li>
+	       	   			</ul>
+	       	   			<h5>c注释</h5>
+	       	   			css注释方法：/*...*/多行注释<br/>
+	       	   			Html注释方法：<&nbsp;!--注释的内容--&nbsp;><!--注释的内容--><br/>
+	       	   		<h1>本节小结</h1>
+	       	   		<ul>
+	       	   			<li>css(层叠样式表)</li>
+	       	   			<li>语法：<span id ="r">选择器{属性：属性值；
+	       	   			    属性：属性值；...}</span>
+	       	   			</li>
+	       	   			<li>选择器：<span id ="r">标签选择器、类选择器、
+	       	   			    ID选择器</span><br/>
+	       	   			    <ul id ="list">
+	       	   			    	<li>标签选择器：
+	       	   			    		直接使用标签，对所有该标签产生作用，用于控制所有该标签的样式
+	       	   			    	</li>
+	       	   			    	<li>类选择器：
+	       	   			    		用“.“定义，在元素中用class引用，用于控制所有引用该类的元素的样式
+	       	   			    	</li>
+	       	   			    	<li>id选择器：
+	       	   			    		用“#”定义，在元素中用id引用，用于控制设置了该id的元素的样式<br/>
+	       	   			    		<span id ="r">单一页面中，一个id选择器只能使用一次</span>	
+	       	   			    	</li>
+	       	   			    </ul>
+	       	   			<li>在html中使用css的方法：
+	       	   				<ul>
+	       	   					<li>行内样式；为某元素添加style属性，属性取值为css代码<br/>
+	       	   						最灵活，但是不符合样式与内容分离原则,不推荐使用
+	       	   					</li>
+	       	   					<li>页内样式：在页面head的部分添加style标签，
+	       	   						将css代码写在标签间<br/>
+	       	   						控制单一页面样式，维护较困难，不推荐使用
+	       	   					</li>
+	       	   					<li>外部样式：将css代码写在外部.css文件中，使用时引入<br/>
+	       	   						可用性最强，可同时控制多个页面，推荐使用
+	       	   					</li>
+	       	   				</ul>
+	       	   			</li>
+	       	   			<li>样式优先级
+	       	   				<ul>
+	       	   				    <li>ID选择器&nbsp;&nbsp;>&nbsp;&nbsp;类选择器
+	       	   					    &nbsp;&nbsp;>&nbsp;&nbsp;标签选择器
+	       	   				    </li>
+	       	   				    <li>行内样式&nbsp;&nbsp;>&nbsp;&nbsp;页内样式
+	       	   			 	    	&nbsp;&nbsp;>&nbsp;&nbsp;外部样式
+	       	   			    	</li>
+	       	   			        <li>就近原则，距离元素最近的样式优先级最高</li>
+	       	   			    </ul>
+	       	   			</li>
+	       	   		</ul>
+	    <h1>css基本样式修饰</h1>
+	    <h2>字体常用样式</h2>
+	    <p>字体的常用属性
+	    	<ul>
+	    		<li>字体系列：font-family<br/>
+	    			<ul>
+	    			    <li>设置一种字体 &nbsp;font-family:'宋体';</li>
+	    			    <li>设置多种字体 &nbsp;font-family:'宋体','仿宋'...</li>
+	    			    <li>若用户系统里有宋体，用宋体，无宋体则用仿宋</li>
+	    			</ul>
+	    			代码:<br/>
+	    			style{<br/>
+	    			   #h{font-family:华文行楷;}<br/>
+	    		    }<br/>
+	    		    <&nbsp;span id ="h">例子真多<&nbsp;/span><br/>
+	    		    <span id ="h">例子真多</span>
+	    		</li>
+	    		<li>字体大小：font-size<br/>
+	    			<ul>
+	    			    <li>设置字体大小为绝对值 &nbsp;font-size:20px;</li>
+	    			    <li>
+	    			        设置字体大小为绝对值 &nbsp;font-size:25em;(或fomt-size:200%)
+	    			    </li>
+	    			    <li>相对于父元素来设置大小</li>
+	    			</ul>
+	    			代码<br/>
+	    			style{<br/>
+	    			   #font{font-size:20px;}<br/>
+	    			}<br/>
+	    			   <&nbsp;span id ="font">栗子栗子<&nbsp;/span><br/>
+	    			   <span id ="font">栗子栗子</span>
+	    		</li>
+	    		<li>字体风格：font-style<br/>
+	    			&nbsp;&nbsp;&nbsp;设置字体倾斜显示<br/>
+	    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属性值：normal、italic、oblique<br/>
+	    			代码:<br/>
+	    			style{<br/>
+	    			   #st{font-style:italic}<br/>
+	    		    }<br/>
+	    		    <&nbsp;span id ="st">例子例子<&nbsp;/span><br/>
+	    		    <span id ="st">例子例子</span>
+	    		</li>
+	    		<li>字体加粗：font-weight<br/>
+	    			<ul>
+	    				<li>设置字体加粗（固定值） &nbsp;font-weight:900;<br/>
+	    					属性值取值范围为100~900
+	    				</li>
+	    				<li>使关键字加粗字体<br/>
+	    					属性值：lighter、normal、bold、bolder
+	    				</li>
+	    			</ul>
+	    			代码：<br/>
+	    			style{<br/>
+	    			   #we{font-weight:bolder;}<br/>
+	    		    }<br/>
+	    		    <&nbsp;sapn id ="we">小例子<&nbsp;/sapn><br/>
+	    		    <sapn id ="we">小例子</sapn>
+	    		</li>
+	    	</ul>
+	    </p>
+	    <p>字体综合设置<br/>
+	    	&nbsp;&nbsp;在一个声明中设置所有属性<br/>
+	    	例:font :italic bold 36px '宋体';<br/>
+&nbsp;&nbsp;&nbsp;font:36px '宋体'；<br/>
+            设置顺序<br/>
+            <ul>
+            	<li>不强制顺序，但是font-family不能是第一个</li>
+            	<li>未设置的属性会使用默认值</li>
+            	<li>至少要设置两个属性</li>
+            </ul>
+            </p>
+            <h3><span id ="r">尽量使用通用字体系列！</span></h3>
+            <h4>使用字体</h4>
+            <ul>
+            	<li>Windows中
+            		<ul>
+            			<li>中文字体：微软雅黑 黑体 宋体 华文楷体</li>
+            			<li>英文字体：Arial,Segoe,ui</li>
+            		</ul>
+            	</li>
+            	<li>安卓和苹果设备中
+            		<ul>
+            			<li>中英文：sans-serif</li>
+            			<li>英文字体：Open Sans,Helvetica系列</li>
+            		</ul>
+            	</li>
+            	<li>安全字体：Arial.Helvetica,sans-serif;</li>
+            </ul>
+            <h4>使用规范</h4>
+            <ul>
+            	<li>设计中只使用1-2个字体样式</li>
+            	<li>使用易识别的字体</li>
+            	<li>字体样式和内容的气氛要匹配</li>
+            </ul>
+        <h2>文本常用样式</h2>
+        <ul>
+        	<li>文本缩进：text-indent<br/>
+        		设置段落元素的第一行缩进方式<br/>
+        		属性值可为绝对值（px），也可为相对值（em）
+        	</li>
+        	<li>水平对齐：text-align</li>
+        	<li>行高：line-height</li>
+        	<li>文本颜色：color</li>
+        	<li>文本修饰：text-decoration</li>
+        	<li>字符转换：text-transform</li>
+        </ul>
+
+        		看到ch_05 P9，先去吃饭饭了，see you！
+	</body>
+</html>
