@@ -34,6 +34,207 @@
 		    #we{
 		    	font-weight:bolder;
 		    }
+		    #in{
+		    	text-indent:-3em;
+		    }
+		    #em{
+		    	font-size:20px;
+		    	text-indent:2em;
+		    }
+		    #al{
+		    	text-align:center;
+		    }
+		    #he{
+		    	border:1px solid #fff;
+		    	height:50px;
+		    	width:100px;
+		    	line-height:50px;
+		    }
+		    #co{
+		    	color:#0f0;
+		    }
+		    #de{
+		    	text-decoration:none;
+		    }
+		    #tr{
+		    	text-transform:uppercase;
+		    }
+		    #tra{
+		    	text-transform:lowercase;
+		    }
+		    #tran{
+		    	text-transform:capitalize;
+		    }
+		    a:link{
+		    	text-decoration:none;
+		    	color:black;
+		    }
+		    a:visited{
+		    	color:#999;
+		    }
+		    a:hover{
+		    	text-decoration:underline;
+		    	color:lime;
+		    }
+		    a:active{
+		    	color:#f000;
+		    }
+		    input[type ="text"]:focus{
+		    	background-color:aquamarine;
+		    }
+		    #fr li:first-child{
+		    	background-color:#999;
+		    }
+		    body{
+		    	background-color:pink;
+		    	background-image:url(img/jt.jpg);
+		    	background-repeat:no-repeat;
+		    }
+            #shi{
+           	    background-color:#0f0;
+            }
+            #rg{
+            	background-color:rgb(250,0,250);
+            }
+            #nei{
+            	background-color:gray;
+            	padding:20px;
+            }
+            #guan{
+            	background-image:url(img/jt.jpg);
+            	background-repeat:no-repeat;
+            	background-position:center;
+            	height:400px;
+            	border:1px solid coral;
+            }
+            #bai{
+            	background-image:url(img/jt.jpg);
+            	background-repeat:no-repeat;
+            	background-position:50% 50%;
+            	height:400px;
+            	border:1px solid coral;
+            }
+            #cha{
+            	background-image:url(img/jt.jpg);
+            	background-repeat:no-repeat;
+            	background-position:50px 100px;
+            	height:400px;
+            	border:1px solid coral;
+            }
+            #zong{
+            	background:#0f0 url(img/jt.jpg) no-repeat center;
+            	height:400px;
+            	border:1px solid coral;
+            }
+            #lie{
+            	list-style-type:upper-roman;
+            }
+            #ti{
+            	list-style-image:url(img/arrow.png);
+            }
+            #biao{
+            	list-style-position:inside;
+            }
+            #shi{
+            	height:50px;
+            	width:100px;
+            	border:3px solid #000;
+            }
+            #liz{
+            	height:50px;
+            	width:100px;
+            	border-top:5px dashed #09f;
+            	border-right:5px solid #f6f;
+            	border-bottom:5px dashed #f90;
+            	border-left:5px solid #6c3;
+            }
+            #nei{
+            	width:500px;
+            	border:2px solid red;
+            }
+            #wai{
+            	width:500px;
+            	margin-bottom:50px;
+            	border:2px solid red;
+            }
+            #hk{
+            	display:block;
+            }
+            #kh{
+            	display:inline;
+            }
+            #tou{
+            	opacity:0.4;
+            }
+            #f1{
+            	border:1px solid #000;
+            	height:50px;
+            	width:100px;
+            }
+            #f2{
+            	border:1px solid #000;
+            	height:50px;
+            	width:100px;
+            }
+            #f3{
+            	border:1px solid #000;
+            	height:50px;
+            	width:100px;
+            	float:right;
+            }
+            #d1{
+            	border:1px solid #000;
+            	height:50px;
+            	width:100px;
+            	float:left;
+            }
+            #d2{
+            	border:1px solid #000;
+            	height:50px;
+            	width:100px;
+            	float:left;
+            }
+            #d3{
+            	border:1px solid #000;
+            	height:50px;
+            	width:100px;
+            	float:left;
+            }
+            #d4{
+            	height:60px;
+            	width:100px;
+            }
+            #l1{
+            	border:1px solid #000;
+            	height:150px;
+            	width:100px;
+            	float:left;
+            }
+            #l2{
+            	border:1px solid #000;
+            	height:50px;
+            	width:100px;
+            	float:left;
+            }
+            #l3{
+            	border:1px solid #000;
+            	height:50px;
+            	width:100px;
+            	float:left;
+            }
+            #ben{
+            	float:left;
+            }
+            #ko{
+            	height:160px;
+            	width:200px;
+            }
+            .clear:after{
+            	content:"";
+            	height:0;
+            	display:block;
+            	clear:both;
+            }
 	    </style>
 	</head>
 	<body bgcolor ="pink">
@@ -94,9 +295,9 @@
 		<p>img/<br/>
 		属性：<br/>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src:指明存储图像的位置<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt:为图片添加替换文本<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt:为添加替换文本<br/>
 	    例：img src ="images/logo.gif"&nbsp;alt ="我是logo"/</p>
-	    <h5>图片路径</h5>
+	    <h5>路径</h5>
 	    <p>绝对路径<br/>
 	    &nbsp;&nbsp;本机绝对路径:从盘符开始的完整路径<br/>
 	    例：e:\my_site\web\image\a.png<br/>
@@ -114,7 +315,7 @@
 	    	<li>图片在网页的下一级目录&nbsp;&nbsp;src ="目录名称/图片名"</li>
 	    	<li>图片在网页的上一级目录&nbsp;&nbsp;src -"../图片名"</li>
 	    </ol>
-	    例：img src ="图片/bai.jpg"/&nbsp;&nbsp;<img src ="图片/bai.jpg"/><br/>
+	    例：img src ="img/bai.jpg"/&nbsp;&nbsp;<img src ="img/a.jpg"/><br/>
 	    &nbsp;&nbsp;&nbsp;&nbsp;优点：文件夹被移动，其内部文件的相对路径不变</p>
 	    <p>注意事项
 	    	<ul style ="color:red">
@@ -125,7 +326,7 @@
 	    </p>
 	    <h2>超链接————从一个网页指向一个目标的链接关系</h2>
 	    <p>例：a href ="链接目标"&nbsp;链接对象&nbsp;/a&nbsp;&nbsp;
-	    	<a href ="图片/bai.jpg">还是那张图</a><br/>
+	    	<a href ="img/a.jpg">还是那张图</a><br/>
 	    	适合用来制作超链接的内容：导航、推荐图文、友情链接等。<br/>
 	    	链接目标：另一个网页、图片等。<br/>
 	    	必选<span style ="color:red">属性</span>:href,创建指向另一个文档的连接<br/>
@@ -140,10 +341,10 @@
 	    	a href ="demo1.html"HTML中的六级标题/a&nbsp;&nbsp;
 	    	<a href ="demo1.html">HTML中的六级标题</a><br/>
 	    	a href ="http://www.baidu.com" target ="_blank"
-	    	&nbsp;&nbsp;&nbsp;img src ="图片/bai.jpg" alt ="Bai Jingting"/<br/>
+	    	&nbsp;&nbsp;&nbsp;img src ="img/bai.jpg" alt ="Bai Jingting"/<br/>
 	    	/a<br/>
 	    	<a href ="http://www.baidu.com" target ="_blank">
-	    		<img src ="图片/bai.jpg" alt ="Bai Jingting"/>
+	    		<img src ="img/a.jpg" alt ="Bai Jingting"/>
 	    	</a>
 	    	<-点击图片<br/>
 	    	<h2>列表————HTML支持无序列表、有序列表</h2>
@@ -830,16 +1031,1027 @@
         <h2>文本常用样式</h2>
         <ul>
         	<li>文本缩进：text-indent<br/>
-        		设置段落元素的第一行缩进方式<br/>
-        		属性值可为绝对值（px），也可为相对值（em）
+        		<ul>
+        			<li>设置段落元素的第一行缩进方式<br/>
+        	    	    属性值可为绝对值（px），也可为相对值（em）<br/>
+        		        代码：<br/>
+        		        style{<br/>
+        		           #in{text-indent:-3em;}<br/>
+        	            }<br/>
+        	            <&nbsp;p id ="in">这就是例子<&nbsp;/p><br/>
+        	            <p id ="in">这就是例子</p>
+        	        </li>
+        	        <li>长度单位<br/>
+        	        	固定长度：px<br/>
+        	        	&nbsp;&nbsp;font-size:20px;
+        	        	相对长度：em<br/>
+        	        	&nbsp;&nbsp;text-indent:2em;font-size:2em;<br/>
+        	        	&nbsp;&nbsp;相对单位em是相对于元素本身的字体大小的<br/>
+        	        	<span id ="r">&nbsp;&nbsp;font-size属性，它的em值指的是父元素的字体大小</span><br/>
+        	        	代码：<br/>
+        	        	style{<br/>
+        	        	   #em{font-size:20px;text-indent:2em;}<br/>
+        	            }<br/>
+        	            <&nbsp;p id ="em">不太会的例子<&nbsp;/p>
+        	            <p id ="em">不太会的例子</p>
+        	        </li>
+        	    </ul>
         	</li>
-        	<li>水平对齐：text-align</li>
-        	<li>行高：line-height</li>
-        	<li>文本颜色：color</li>
-        	<li>文本修饰：text-decoration</li>
-        	<li>字符转换：text-transform</li>
+        	<li>水平对齐：text-align
+        		设置元素的文本行的对齐方式<br/>
+        		&nbsp;&nbsp;属性值：left、center、right<br/>
+        		&nbsp;&nbsp;默认对齐方式是左对齐<br/>
+        		代码：<br/>
+        		style{<br/>
+        		   #al{text-align:center;}<br/>
+        	    }<br/>
+        	    <&nbsp;p id ="al">居中的例子<&nbsp;/p><br/>
+        	    <p id ="al">居中的例子</p>
+        	</li>
+        	<li>行高：line-height<br/>
+        		&nbsp;&nbsp;设置行与行之间的距离<br/>
+        		&nbsp;&nbsp;属性值表示方式：<br/>
+        		<ul>
+        			<li>固定值（如line-height：36px；）</li>
+        			<li>相对值（如line-height：1.5em；）</li>
+        		</ul>
+        		代码：<br/>
+        		style{<br/>
+        		   #he{border:1px solid #fff;height:50px;
+        		   width:100px;line-height:50px;}<br/>
+        	    }<br/>
+        	    <&nbsp;p id ="we">行高的例子<&nbsp;/p><br/>
+        	    <p id ="he">行高的例子</p>
+        	</li>
+        	<li>文本颜色：color<br/>
+        		设置文字颜色的三种方法：<br/>
+        		<ol>
+        			<li>color:green;</li>
+        			<li>color:#008000;</li>
+        			<li>color:rgb(0,128,0);</li>
+        		</ol>
+        		颜色属性值<br/>
+        		&nbsp;&nbsp;rgb()<br/>
+        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RGB,将红、绿、蓝三原色的色光以不同的比例相加，以产生多种多样的色光<br/>
+        		例：<br/>
+        		-R(0~255) red<br/>
+        		-G(0~255) green<br/>
+        		-B(0~255) blue<br/>
+        		rgb(255,255,255)：白色&nbsp;&nbsp;rgb(0,0,0)：黑色&nbsp;&nbsp;
+        		rgb(255,0,0)：红色&nbsp;&nbsp;rgb(0,255,0)：绿色<br/>
+        	    &nbsp;&nbsp;十六进制&nbsp;以#开头&nbsp;
+        	    红&nbsp;绿&nbsp;蓝（00~FF）<br/>
+        	    <ul>
+        	        <li>color:#ff0000;//红色</li>
+        	        <li>color:#00ff00;//绿色</li>
+        	        <li>color:#0000ff;//蓝色</li>
+        	    </ul>
+        	    规范写法：<br/>
+        	    &nbsp;&nbsp;小写，缩写：<br/>
+        	    <ul>
+        	        <li>#ff0000 = #f00</li>
+        	        <li>#00ff00 = #0f0</li>
+        	        <li>#eeeeee = #eee</li>
+        	    </ul> 
+        	    代码：<br/>
+        	    style{<br/>
+        	    #co{color:#0f0}<br/>
+        	    }<br/>
+        	    <&nbsp;span id ="co">颜色的例子<&nbsp;/span><br/>
+        	    <span id ="co">颜色的例子</span>       	
+        	</li>
+        	<li>文本修饰：text-decoration<br/>
+        		设置文本的修饰效果<br/>
+        		&nbsp;&nbsp;属性值：none(无装饰)、overline(上划线)、
+        		underline(下划线)、line-through(删除线)<br/>
+        		&nbsp;&nbsp;实战技巧：
+        		<ul>
+        			<li id ="r">a元素默认有下划线，其他元素默认值为none</li>
+        			<li>可用来去掉浏览器给<&nbsp;a&nbsp;>加的默认下划线</li>
+        		</ul>
+        		代码：<br/>
+        		style{<br/>
+        		   #de{text-decoration:none;}<br/>
+        	    }<br/>
+        	    <&nbsp;a href ="demo1.html" id ="de">六级标题<&nbsp;/a><br/>
+        	    <&nbsp;a href ="demo1.html">六级标题<&nbsp;/a><br/>
+        	    <a href ="demo1.html">六级标题</a><br/>
+        	    <a href ="demo1.html" id ="de">六级标题</a>
+        	</li>
+        	<li>字符转换：text-transform<br/>
+        		设置文本的大小写<br/>
+        		&nbsp;&nbsp;属性值：
+        		<ul>
+        			<li>none</li>
+        			<li>uppercase：把所有的字母转换成大写</li>
+        			<li>lowercase：把所有的字母转换成小写</li>
+        			<li>capitalize：只对每个单词的首字母大写</li>
+        		</ul>
+        		代码：<br/>
+        		style{<br/>
+        		   #tr{text-transform:uppercase;}<br/>
+        		   #tra{text-transform:lowercase;}<br/>
+        		   #tran{text-transform:capitalize;}<br/>
+        	    }<br/>
+        	    <&nbsp;p id ="tr">wodetian<&nbsp;/p><br/>
+        	    <p id ="tr">wodetian</p>
+        	     <&nbsp;p id ="tra">WODEtian<&nbsp;/p><br/>
+        	    <p id ="tra">WODEtian</p>
+        	     <&nbsp;p id ="tran">wodetian<&nbsp;/p><br/>
+        	    <p id ="tran">wo de tian</p>
+        	</li>
+        	<li>小细节————行和段落<br/>
+        	    行高跟文字要搭配，一般行高是文字的1.5~1.8倍最为合适<br/>
+        	    例：<br/>
+        	    &nbsp;&nbsp;正文文字：14px<br/>
+        	    &nbsp;&nbsp;行高（px）：22px~26px（行高最好设置为偶数）<br/>
+        	    &nbsp;&nbsp;行高（em）：1.5em~1.8em
+            </li>
         </ul>
-
-        		看到ch_05 P9，先去吃饭饭了，see you！
+        <h2>超链接的样式设置</h2>
+        可对超链接设置的样式很多，单独进行说明是因为可对超链接的四种不同状态设置不同样式<br/>
+        超链接有四种状态：<br/>
+        <ul>
+        	<li>未被访问的超链接 a:link</li>
+        	<li>鼠标经过超链接a:hover</li>
+        	<li>链接被点击的那一刻a:active</li>
+        	<li>访问过的超链接a:visited</li>
+        </ul>
+        例：<br/>
+        a:link{text-decoration:none;color:black;}<br/>
+        a:visited{color:#999;}<br/>
+        a:hover{text-decoration:underline;color:lime;}<br/>
+        a:active{color:#f00;}<br/>
+        代码：<br/>
+        style{<br/>
+        a:link{text-decoration:none;color:black;}<br/>
+        a:visited{color:#999;}<br/>
+        a:hover{text-decoration:underline;color:lime;}<br/>
+        a:active{color:#f000;}<br/>
+        }<br/>
+        <&nbsp;a href ="demo1.html">demo1<&nbsp;/a><br/>
+        <a href ="demo1.html">demo1</a><br/>
+        说明：设置超链接的多种状态(>=2)时，需要按特定顺序设置,
+        <span id ="r">:link. :visited. :hover, :active</span><br/>
+        <h4>伪类</h4>
+        作用：可与CSS类结合使用，向某些选择器添加特殊效果<br/>
+        <table border ="1px" cellpadding="0" cellspacing ="0">
+        	<tr>
+        		<th>属性</th>
+        		<th>描述</th>
+        	</tr>
+        	<tr>
+        		<td>:link</td>
+        		<td>向<span id ="r">未</span>被访问的链接添加样式</td>
+        	</tr>
+        	<tr>
+        		<td>:visited</td>
+        		<td>向<span id ="r">已被访问的链接添加样式</span></td>
+        	</tr>
+        	<tr>
+        		<td>:hover</td>
+        		<td>当<span id ="r">鼠标悬浮在元素上方时，向元素添加样式</span></td>
+        	</tr>
+        	<tr>
+        		<td>:active</td>
+        		<td>向被激活的元素添加样式</td>
+        	</tr>
+        	<tr>
+        		<td>:focus</td>
+        		<td>向拥有键盘输入焦点的元素添加样式</td>
+        	</tr>
+        	<tr>
+        		<td>:first-child</td>
+        		<td>向元素的第一个子元素添加样式</td>
+        	</tr>
+            <tr>
+            	<td>:lang</td>
+            	<td>向带有指定lang属性的元素添加样式</td>
+            </tr>
+        </table>
+        link和visited<span id ="r">只</span>能用于超链接<br/>
+        其他可用于各种HTML元素<br/>
+        focus、first-child、lang举例:<br>
+        style{<br/>
+          input[type = text]:focus{background-color:aquamarine;}<br/>
+          #fr li:first-child{bcakground-color:#999;}<br/>
+        }<br/>
+        <&nbsp;input type ="text" name ="lizi"><br/>
+        <input type ="text" name ="lizi"><br/>
+        <&nbsp;ul id ="fr"><br/>
+        	<&nbsp;li>例子<&nbsp;/li><br/>
+        	<&nbsp;li>还是<&nbsp;/li><br/>
+        	<&nbsp;li>栗子<&nbsp;/li><br/>
+        <&nbsp;/ul><br/>
+        <ul id ="fr">
+        	<li>例子</li>
+        	<li>还是</li>
+        	<li>栗子</li>
+        </ul>
+        <h2>背景的样式设置</h2>
+        css允许应用纯色作为背景，也允许使用背景图像创建相同效果<br/>
+        <h4>背景色</h4>
+        background-color：<br/>
+        <ul>
+        	<li>background-color:gray;</li>
+        	<li>background=color:#808080;</li>
+        	<li>background-color:rgb(128,128,128);</li>
+        </ul>
+        同一个背景色，可以有多种实现方式，常见的三种为：<br/>
+        <ul>
+        	<li>关键字(gray)</li>
+        	<li>十六进制表示方法（#808080）</li>
+        	<li>rgb表示方法，如rgb(128,128,128)</li>
+        </ul>
+        代码：<br/>
+        style{<br/>
+           body{background-color:pink;}<br/>
+           #shi{background-color:#0f0;}<br/>
+           #rg{background-color:rgb(250,0,250);}<br/>
+           #nei{background-color:gray;padding:20px;}<br/>
+        }<br/>
+        <&nbsp;h1 id ="shi">这是标题1<&nbsp;/h1><br/>
+        <h1 id ="shi">这是标题1</h1>
+        <&nbsp;p id ="rg">这是段落<&nbsp;/p><br/>
+        <p id ="rg">这是段落</p>
+        <&nbsp;p id ="nei">这个段落设置了内边距<&nbsp;/p><br/>
+        <p id ="nei">这个段落设置了内边距</p>
+        <h4>背景图像</h4>
+        background-image<br/>
+        代码：<br/>
+        body{background-image:url(img/bai.jpg);}<br/>
+        <h5>brackground-repeat:设置图像的平铺模式</h5>
+        &nbsp;&nbsp;属性值：<br/>
+        <table border ="1px" cellpadding ="0" cellspacing ="0">
+        	<tr>
+        		<th>值</th>
+        		<th>描述</th>
+        	</tr>
+        	<tr>
+        		<td>repeat</td>
+        		<td>默认。背景图像将在垂直方向和水平方向重复</td>
+        	</tr>
+        	<tr>
+        		<td>repeat-x</td>
+        		<td>背景图像将在水平方向重复</td>
+        	</tr>
+        	<tr>
+        		<td>repeat-y</td>
+        		<td>背景图像将在垂直方向重复</td>
+        	</tr>
+        	<tr>
+        		<td>no-repeat</td>
+        		<td>背景图像将仅显示一次</td>
+        	</tr>
+        	<tr>
+        		<td>inherit</td>
+        		<td>规定应该从父元素继承background-repeat属性的设置</td>
+        	</tr>
+        </table>
+        代码：<br/>
+        body{background-repeat:no-repeat;}<br/>
+        <h5>background-position:设置图像在背景中的位置</h5>
+        &nbsp;&nbsp;属性值：<br/>
+        <ul>
+        	<li>关键字</li>
+        	<li>百分比</li>
+        	<li>长度值</li>
+        </ul>
+        注意：定位前提条件图像平铺模式设置为no-repeat<br/>
+        <ol>
+        	<li>background-position:关键字;<br/>
+        		<table border ="1px" cellpadding ="0" cellspacing ="0">
+        			<tr>
+        				<th>单一关键字</th>
+        				<th>等价关键字</th>
+        			</tr>
+        			<tr>
+        				<td>center</td>
+        				<td>center center</td>
+        			</tr>
+        			<tr>
+        				<td>top</td>
+        				<td>top center 或 center top</td>
+        			</tr>
+        			<tr>
+        				<td>bottom</td>
+        				<td>bottom center 或 center bottom</td>
+        			</tr>
+        			<tr>
+        				<td>right</td>
+        				<td>right center 或 center right</td>
+        			</tr>
+        			<tr>
+        				<td>left</td>
+        				<td>left center 或 center left</td>
+        			</tr>
+        		</table>
+        		如果仅规定了一个关键词，那么第二值将是“center”<br/>
+        		代码：<br/>
+        		style{<br/>
+        		   #guan{background-image:url(bai.jpg);background-repeat:no-repeat;
+        		   <br/>background-position:center;height:400px; border:1px dolid coral;}<br/>
+        		}<br/>
+        		<&nbsp;p id ="guan">哎呀呀<&nbsp;/p>
+        		<p id ="guan">哎呀呀</p>
+        	</li>
+        	<li>background-position:百分比;<br/>
+        		background-position 的默认值是 0% 0%，在功能上相当于 top left<br/>
+        		代码：<br/>
+        		style{<br/>
+        		   #bai{background-image:url(img/bai.jpg);
+        		      background-repeat:no-repeat;<br/>background-position:50% 50%;
+        		      height:400px;border:1px solid coral;}<br/>       		   
+        	    }<br/>
+        	    <&nbsp;p id ="bai"><&nbsp;/p><br/>
+        	    <p id ="bai"></p>
+        	</li>
+        	<li>background-position:长度值;<br/>
+        		长度值是指距离元素内边距左上角的距离<br/>
+        		代码：<br/>
+        		style{<br/>
+        		   #cha{background-image:url(img/bai.jpg);
+        		      background-repeat:no-repeat;<br/>background-position:50px 100px;height:400px;border:1px solid coral;}<br/>       		   
+        	    }<br/>
+        	    <&nbsp;p id ="cha"><&nbsp;/p><br/>
+        	    <p id ="cha"></p>
+        	</li>
+        	<li>在一个声明中设置所有背景属性<br/>
+        		代码：<br/>
+                style{<br/>
+                   #zong{background:#0f0 url(img/bai.jpg) no-repeat center;<br/>height:400px;border:1px solid coral;<br/>       		   
+         	    }<br/>
+        	    <&nbsp;p id ="zong"><&nbsp;/p><br/>
+        	    <p id ="zong"></p>
+        	</li>
+        </ol>
+        <h2>列表常用样式</h2>
+       	列表相关属性<br/>
+       	<ul>
+       		<li>列表标志类型(list-style-type)：设置列表项标记的类型<br/>
+       			属性值：<br/>
+       			<table>
+       				<tr>
+       					<th>none</th>
+       					<th>无标记</th>
+       				</tr>
+       				<tr>
+       				</tr>
+       				<tr>
+       					<td>circle</td>
+       					<td>标记是空心圆</td>
+       				</tr>
+       				<tr>
+       					<td>square</td>
+       					<td>标记是实心方块</td>
+       				</tr>
+       				<tr>
+       					<td>decimal</td>
+       					<td>标记是数字</td>
+       				</tr>
+       				<tr>
+       					<td>decimal-leading-zero</td>
+       					<td>0开头的数字标记（01,02,03,等）</td>
+       				</tr>
+       				<tr>
+       					<td>lower-roman</td>
+       					<td>小写罗马数字</td>
+       				</tr>
+       				<tr>
+       					<td>upper-roman</td>
+       					<td>大写罗马数字</td>
+       				</tr>
+       			</table>
+       			代码：<br/>
+       			style{<br/>
+       			   #lie{list-style-type:upper-roman;}<br/>
+       			}<br/>
+       			<&nbsp;ulid ="lie"><br/>
+       				<&nbsp;li>例子<&nbsp;/li><br/>
+       				<&nbsp;li>栗子<&nbsp;/li><br/>
+       				<&nbsp;li>梨子<&nbsp;/li><br/>
+       			<&nbsp;/ul><br/>
+       			<ul id ="lie">
+       				<li>例子</li>
+       				<li>栗子</li>
+       				<li>梨子</li>
+       			</ul>
+       		</li>
+       		<li>列表标志图像(list-style-image)：使用图像来替换列表项的标记<br/>
+       			代码：<br/>
+       			style{<br/>
+       			   #ti{list-style-image:url(img/arrow.png);}<br/>
+       			}<br/>
+       		    <&nbsp;ul id ="ti"><br/>
+       	            <&nbsp;li>一个<&nbsp;/li><br/>
+       	            <&nbsp;li>例<&nbsp;/li><br/>
+       	            <&nbsp;li>子<&nbsp;/li><br/>
+                <&nbsp;/ul><br/>
+       			<ul id ="ti">
+       				<li>一个</li>
+       				<li>例</li>
+       				<li>子</li>
+       			</ul>
+       		</li>
+       		<li>列表标志位置(list-style-position):设置列表标记的位置<br/>
+       			属性值：<br/>
+       			&nbsp;&nbsp;outside：默认值。标记位于文本的左侧<br/>
+       			&nbsp;&nbsp;inside：标记放置在文本以内<br/>
+       			代码：<br/>
+       			style{<br/>
+       			   #biao{list-style=position:inside;}<br/>
+       			}<br/>
+       			<&nbsp;ul id ="biao"><br/>
+       				<&nbsp;li>哈<&nbsp;/li><br/>
+       				<&nbsp;li>这是一个段落的例子，用于体现出列表标志的位置，
+       				          这是一个段落的例子，用于体现出列表标志的位置，这是一个段落的例子，用于体现出列表标志的位置这是一个段落的例子，用于体现出列表标志的位置，这是一个段落的例子，用于体现出列表标志的位置，这是一个段落的例子，用于体现出列表标志的位置
+       				<&nbsp;/li><br/>
+      			<&nbsp;/ul><br/>
+       			<ul id ="biao">
+       				<li>哈</li>
+       				<li>这是一个段落的例子，用于体现出列表标志的位置，这是一个段落的例
+       					子，用于体现出列表标志的位置，这是一个段落的例子，用于体现出列表标志的位置这是一个段落的例子，用于体现出列表标志的位置，这是一个段落的例子，用于体现出列表标志的位置，这是一个段落的例子，用于体现出列表标志的位置
+        			</li>
+        		</ul>
+        	</li>
+       		<li>综合属性:一个声明中设置所有的列表属性<br/>
+       			例：list-style：url(img/arrows,png) outside circle;
+       		</li>
+       	</ul>
+       	<h1>本章小结</h1>
+       	<table border ="1px" cellpadding ="0" cellspacing ="0">
+       		<tr>
+       			<th>文字修饰</th>
+       			<th>文本修饰</th>
+       			<th>超链接修饰</th>
+       			<th>背景修饰</th>
+       			<th>列表修饰</th>
+       		</tr>
+       		<tr>
+       			<td>font-family</td>
+       			<td>text-indent</td>
+       			<td>a:link</td>
+       			<td>background-color</td>
+       			<td>list-style-type</td>
+       		</tr>
+       		<tr>
+       			<td>font-size</td>
+       			<td>text-align</td>
+       			<td>a:visited</td>
+       			<td>background-image</td>
+       			<td>list-style-image</td>
+       		</tr>
+       		<tr>
+       			<td>font-weight</td>
+       			<td>color</td>
+       			<td>a:hover</td>
+       			<td>background-repeat</td>
+       			<td>list-style-position</td>
+       		</tr>
+       		<tr>
+       			<td>font-weight</td>
+       			<td>line-height</td>
+       			<td>a:active</td>
+       			<td>background-position</td>
+       			<td>list-style</td>
+       		</tr>
+       		<tr>
+       			<td>font</td>
+       			<td>text-decoration</td>
+       			<td> </td>
+       			<td>background</td>
+       			<td> </td>
+       		</tr>
+       	</table>
+       	<h1>盒子模型</h1>
+       	Web中的盒子：一个矩形区域，内容包裹在盒子中。盒子的堆叠与嵌套形成整个页面的内容排布<br/>
+       	盒子在Web中的作用<br/>
+        &nbsp;&nbsp;页面内容的容器</br/>
+        &nbsp;&nbsp;通过盒子与盒子的嵌套、堆叠，控制页面内容的展示位置（布局）<br/>
+        每个盒子具有的特征(盒子模型特征)：<br/>
+        <ul>
+        	<li>大小(width、height)</li>
+        	<li>边框(border)</li>
+        	<li>内边距(padding)</li>
+        	<li>外边距(margin)</li>
+        </ul>
+        <h2>盒子模型的各项属性</h2>
+        <ul>
+            <li>大小：height与width包围起来的即为内容区域<br/>
+                内容区域：页面元素，可以是表格、段落、列表、图片、文字、媒体等
+            </li>
+            <li>边框：border，用于限定盒子外围<br/>
+            	&nbsp;&nbsp;性质：<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;边框的宽度：border-width:5px<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;边框的样式：border-style:solid<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;边框的颜色：border-color:red<br/>
+            	&nbsp;&nbsp;组成：<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上边框：border-top;<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右边框：border-right;<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下边框：border-bottom；<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;左边框：border-left;<br/>
+            	&nbsp;&nbsp;宽度：<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宽度值：border-width<br/>
+            	&nbsp;&nbsp;颜色：<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;颜色值：border-color<br/>
+            	&nbsp;&nbsp;样式：<br/>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;样式关键词：border-style<br/>
+            	边框样式关键字<br/>
+            	<table border ="1px" cellpadding ="0" cellspacing ="0">
+            		<tr>
+            			<th>样式的取值</th>
+            			<th>说明</th>
+            		</tr>
+            		<tr>
+            			<td>none</td>
+            			<td>不显示边框，为默认值</td>
+            		</tr>
+            		<tr>
+            			<td>dotted</td>
+            			<td>点线</td>
+            		</tr>
+            		<tr>
+            			<td>dashed</td>
+            			<td>虚线，也可以成为短线</td>
+            		</tr>
+            		<tr>
+            			<td>solid</td>
+            			<td>实线</td>
+            		</tr>
+            		<tr>
+            			<td>double</td>
+            			<td>双直线</td>
+            		</tr>
+            		<tr>
+            			<td>groove</td>
+            			<td>凹型线</td>
+            		</tr>
+            		<tr>
+            			<td>ridge</td>
+            			<td>凸型线</td>
+            		</tr>
+            		<tr>
+            			<td>inset</td>
+            			<td>嵌入式</td>
+            		</tr>
+            		<tr>
+            			<td>outset</td>
+            			<td>嵌出式</td>
+            		</tr>
+            	</table>
+            	复合<br/>
+            	border-width：1px相当于border-top：1px、border-right:1px、border-botton:1px、border-left:1px<br/>
+            	border-width:1px;相当于所有边框宽度为1px<br/>
+            	border-width:1px 2px;相当于上下边框为1px，左右边框为2px<br/>
+            	border:width style color;<br/>
+            	代码：<br/>
+            	style{<br>
+            	   #shi{height:50px;width:100px;border:3px solid #000}<br/>
+            	   #liz{height:50px;width:100px;boder-top:5px dashed #09f;<br/>
+            	        border-right:5px solid #f6f;border-bottom:5px dashed #f90;border-left:5px solid #6c3}<br/>
+            	}<br/>
+            	<&nbsp;div id ="shi"><&nbsp;/div>
+            	<&nbsp;div id ="liz"><&nbsp;/div>
+            	<div id ="shi"></div><br/>
+            	<div id ="liz"></div>
+            </li>
+            <li>内边距:padding,用于控制内容部分与边框的间距<br/>
+            	&nbsp;&nbsp;padding-top:上间距<br/>
+            	&nbsp;&nbsp;padding-right:右间距<br/>
+            	&nbsp;&nbsp;padding-borrom:下间距<br/>
+            	&nbsp;&nbsp;padding=left:左间距<br/>
+            	代码：<br/>
+            	style{<br/>
+            	   #nei{width:500px;border:2px solid red;}<br/>
+            	}<br/>
+            	<&nbsp;p id ="nei">元素的内边距在边框和内容区之间<&nbsp;/p>
+            	<&nbsp;p id ="nei">CSS padding属性定义元素边框与元素内容之间的空白区域<&nbsp;/p>
+            	<p id ="nei">元素的内边距在边框和内容区之间</p>
+            	<p id ="nei">CSS padding属性定义元素边框与元素内容之间的空白区域</p>
+            </li>
+            <li>外边距:margin 用于控制盒子之间的间距<br/>
+            	&nbsp;&nbsp;margin-top:上间隔<br/>
+            	&nbsp;&nbsp;margin-right:右间隔<br/>
+            	&nbsp;&nbsp;margin-borrom:下间隔<br/>
+            	&nbsp;&nbsp;margin-left:左间隔<br/>
+            	代码：<br/>
+            	style{<br/>
+            	   #wai{width:500px;margin-bottom:50px;border:2px solid red;}<br/>
+            	}<br/>
+            	<&nbsp;p id ="wai">元素的内边距在边框和内容区之间<&nbsp;/p><br/>
+            	<&nbsp;p id ="wai">
+            	    CSS padding 属性定义元素边框与元素内容之间的空白区域
+            	<&nbsp;/p><br/>
+            	<p id ="wai">元素的内边距在边框和内容区之间</p>
+            	<p id ="wai">CSS padding 属性定义元素边框与元素内容之间的空白区域</p>
+            </li>
+        </ul>
+        盒子模型计算问题<br/>
+        &nbsp;&nbsp;box = width/height + border +padding +margin<br/>
+        <h2>块级元素与行内元素</h2>
+        根据HTML元素的显示特征，可分为：
+        &nbsp;&nbsp;块级元素(block level element)<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元素在显示时会独占一行，并同时具有宽、高、内边距特征<br/>
+        &nbsp;&nbsp;行内元素(inline element)<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在显示时通常不会以新行开始，横向排列，到最右端自动拆行<br/>
+        <h4>HTML常见的块级元素和行内元素</h4>
+        <table style ="text-align:center">
+        	<tr>
+        		<th>常见的块级元素</th>
+        		<th>常见的行内元素</th>
+        	</tr>
+        	<tr>
+        		<td>
+        			<ul>
+        				<li>form —— 交互表单</li>
+        				<li>h1 —— 1级标题</li>
+        				<li>hr —— 水平分割线</li>
+        				<li>p —— 段落</li>
+        				<li>table —— 表格</li>
+        				<li>ul —— 无序列表</li>
+        			</ul>
+                </td>
+                <td>
+                	<ul>
+                		<li>a —— 链接</li>
+                		<li>img —— 图片</li>
+                		<li>input —— 输入框</li>
+                		<li>select —— 项目选择</li>
+                		<li>font —— 字体设定</li>
+                		<li>b —— 粗体</li>
+                		<li>i —— 斜体</li>
+                		<li>strong —— 粗体强调</li>
+                	</ul>
+                </td>
+            </tr>
+        </table>
+        <h4>HTML容器元素</h4>
+        <ul>
+        	<li><&nbsp;div&nbsp;><&nbsp;/div&nbsp;><br/>
+        	    &nbsp;&nbsp;块级元素<br/>
+        	    &nbsp;&nbsp;作为内容或其他元素的容器<br/>
+        	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;控制元素的大小、边框、位置等<br/>
+        	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;控制内部元素和内容的样式<br/>
+        	</li>
+        	<li><&nbsp;span&nbsp;><&nbsp;/span&nbsp;><br/>
+        		&nbsp;&nbsp;行内元素<br/>
+        		&nbsp;&nbsp;作为内容或其他元素的容器<br/>
+        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;控制内部元素和内容的样式<br/>
+        	</li>
+        </ul>
+        <h4>CSS的display属性</h4>
+        display属性<br/>
+        &nbsp;&nbsp;用于指定HTML标签的显示方式<br/>
+        &nbsp;&nbsp;属性值：关键字<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常用的有4个<br/>
+        <table>
+        	<tr>
+        		<th>属性</th>
+        		<th>常用可能值</th>
+        		<th>说明</th>
+        	</tr>
+        	<tr>
+        		<td rowspan ="4">display</td>
+        		<td>block</td>
+        		<td>将元素显示为<span id ="r">块级</span>元素，该元素前后会带有换行符</td>
+        	</tr>
+        	<tr>
+        		<td>inline</td>
+        		<td>元素会被显示为<span id ="r">行内</span>元素，和该元素前后没有换行符</td>
+        	</tr>
+        	<tr>
+        		<td>inline-block</td>
+        		<td>行内块元素</td>
+        	</tr>
+        	<tr>
+        		<td>none</td>
+        		<td>该元素<span id ="r">不会被显示</span></td>
+        	</tr>
+        </table>
+        代码：<br/>
+        style{<br/>
+           #hk{display:block;}<br/>
+           #kh{display:inline;}<br/>
+        }<br/>
+        <&nbsp;span id ="hk">例 <&nbsp;/span><br/>
+        <&nbsp;span id ="hk">子<&nbsp;/span><br/>
+        <&nbsp;div id ="kh">缝<&nbsp;/div><br/>
+        <&nbsp;div id ="kh">补<&nbsp;/div><&nbsp;br/><br/>
+        <span id ="hk">例 </span>
+        <span id ="hk">子</span>
+        <div id ="kh">缝</div>
+        <div id ="kh">补</div><br/>
+        <h2>盒子模型的应用</h2> 
+        页面布局<br/>
+        &nbsp;&nbsp;导航栏：<br/>
+        <ul>
+        	<li>纵向导航<br/>
+        		<ol>
+        			<li>制作时使用ul进行制作，设定li的边框及宽高</li>
+        			<li>使用list-style-type属性，隐藏列表项目符号</li>
+        			<li>使用line-height属性使li中的文本垂直方向居中</li>
+        			<li>使用text-align属性使li中的文本水平方向居中</li>
+        		</ol>
+        	</li>
+        	<li>横向导航<br/>
+        		&nbsp;&nbsp;设置<&nbsp;li&nbsp;>的宽度属性后，设置display属性，属性值为inline-block,可以使<&nbsp;li&nbsp;>标签横向排列<br/>
+        		&nbsp;&nbsp;在IE和Firefox中，ul磨人的margin和padding不一样，要手动声明margin和padding为0，才能使ul显示样式兼容。
+        	</li>
+        </ul>
+        &nbsp;&nbsp;分栏的实现<br/>
+        &nbsp;&nbsp;图像透明的实现<br/>
+        代码：<br/>
+        style{<br/>
+           #tou{opacity:0.4;}<br/>
+        }</br/>
+        <&nbsp;img src ="img/Bai.jpg"><&nbsp;br/><br/>
+        <&nbsp;img src ="img/Bai.jpg"id ="tou"/><&nbsp;br/><br/>
+        <img src ="img/Bai.jpg"/><br/>
+        <img src ="img/Bai.jpg"id ="tou"/><br/>
+        <h1>本章小结</h1>
+        <ul>
+        	<li>CSS盒子模型简介<br/>
+        		&nbsp;&nbsp;使用CSS修饰元素边框<br/>
+        		&nbsp;&nbsp;使用CSS修饰元素内边距和外边距<br/>
+        	</li>
+        	<li>行内元素、块级元素的概念及display属性的用法</li>
+        	<li>CSS盒子模型的应用<br/>
+        		&nbsp;&nbsp;网页布局<br/>
+        		&nbsp;&nbsp;导航栏的实现<br/>
+        		&nbsp;&nbsp;分栏的实现<br/>
+        	</li>
+        </ul>
+        <h1>网页布局</h1>
+        <h2>布局概念、布局常见版式</h2>
+        网页布局：是指网页内容在页面上所处位置的设计<br/>
+        网页布局的宗旨：由整体到局部<br/>
+        布局历史：<br/>
+        &nbsp;&nbsp;HTML的局限性————块级、行级、行块级<br/>
+        &nbsp;&nbsp;聪明的方式————table布局<br/>
+        &nbsp;&nbsp;DIV + CSS<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div ———— 布局标签<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;css ————布局方法<br/>
+        布局标签 ———— div<br/>
+        &nbsp;&nbsp;相当于一个容器(盒子)，可以把文档分割为独立的、不同的部分<br/>
+        &nbsp;&nbsp;具有盒子模型的所有属性，布局时用来控制元素之间的距离和相对位置<br/>
+        &nbsp;&nbsp;通过id或class属性区分不同的容器<Br/>
+        布局比较<br/>
+        <table border ="1" cellpadding ="0" cellspacing ="0">
+        	<tr>
+        		<th> </th>
+        		<th>DIV + CSS</th>
+        		<th>Table</th>
+        	</tr>
+        	<tr>
+        		<td>代码</td>
+        		<td>简洁</td>
+        		<td>繁琐，重复</td>
+        	</tr>
+        	<tr>
+        		<td>页面优化</td>
+        		<td>有利于搜索引擎的搜索</td>
+        		<td>不利于搜索引擎的搜索</td>
+        	</tr>
+        	<tr>
+        		<td>打开速度</td>
+        		<td>载入一点就显示一点，因此有“载入快”的说法<br/>
+        			(网速非常卡的时候，页面会一点一点得出来的)<br/>
+        			多少层都可以
+        		</td>
+        		<td>只有在表格体内的内容全部载入完后，才一次性显示该表格<br/>
+        			(在网速非常卡的时候，过了几分钟后，页面一下会全部打开)<br/>
+        			建议不超过三层嵌套
+        		</td>
+        	</tr>
+        	<tr>
+        		<td>重构页面</td>
+        		<td>内容和样式的分离导致我们在重构页面布局(更换皮肤)
+        			的时候，只用针对每一个div元素重新定义其具体位置、样式就行了
+        		</td>
+        		<td>在table基础上进行改版，几乎必须改变所有的内容，实在是太过于麻烦</td>
+        	</tr>
+        	<tr>
+        		<td>兼容性</td>
+        		<td>不太好</td>
+        		<td>好</td>
+        	</tr>
+        </table>
+        <h2>布局方法</h2>
+        浮动 ———— float<br/>
+        定义元素在哪个方向浮动，改变页面中对象的前后流动顺序<br/>
+        &nbsp;&nbsp;属性：
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none：默认值，无浮动<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left：向父元素左侧紧靠<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right：向父元素右侧紧靠<br/>
+        http://www.w3school.com.cn/css/css_positioning_floating.asp<br/>
+        代码1：<br/>
+        style{<br/>
+           #f1{height:50px;width:100px;border:1px solid #000;}<br/>
+           #f2{height:50px;width:100px;border:1px solid #000;}<br/>
+           #f3{height:50px;width:100px;border:1px solid #000;float:right;}<br/>
+        }<br/>
+        <&nbsp;div id ="f1"><&nbsp;/div><br/>
+        <&nbsp;div id ="f2"><&nbsp;/div><br/>
+        <&nbsp;div id ="f3"><&nbsp;/div><br/>
+        <div id ="f1"></div>
+        <div id ="f2"></div>
+        <div id ="f3"></div>
+        当框1向右浮动时，框1会尽可能向右移动，直到它的右边缘碰到包含框的右边缘<br/>
+        代码2：<br/>
+        style{<br/>
+           #d1{height:50px;width:100px;border:1px solid #000;float:left;}<br/>
+           #d2{height:50px;width:100px;border:1px solid #000;float:left;}<br/>
+           #d3{height:50px;width:100px;border:1px solid #000;float:left;}<br/>
+        }<br/>
+        <&nbsp;div id ="d1"><&nbsp;/div><br/>
+        <&nbsp;div id ="d2"><&nbsp;/div><br/>
+        <&nbsp;div id ="d3"><&nbsp;/div><br/>
+        <div id ="d1"></div>
+        <div id ="d2"></div>
+        <div id ="d3"></div>
+        <div id ="d4"> </div>
+        代码3：<br/>
+        style{<br/>
+           #l1{height:150px;width:200px;border:1px solid #000;float:left;}<br/>
+           #l2{height:50px;width:100px;border:1px solid #000;float:left;}<br/>
+           #l3{height:50px;width:100px;border:1px solid #000;float:left;}<br/>
+        }<br/>
+        <&nbsp;div id ="l1"><&nbsp;/div><br/>
+        <&nbsp;div id ="l2"><&nbsp;/div><br/>
+        <&nbsp;div id ="l3"><&nbsp;/div><br/>
+        <div id ="l1"></div>
+        <div id ="l2"></div>
+        <div id ="l3"></div>
+        <div id ="ko"> </div>
+        如果包含框无法容纳水平排列的三个浮动元素，那么其他浮动块向下移动，直到有足够的空间。<br/>
+        如果浮动元素的高度不同，浮动块会尽可能向上移动<br/>
+        &nbsp;&nbsp;浮动本意<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float的初衷 ———— 文字环绕图片效果<br/>
+        代码：<br/>
+        style{<br/>
+           #ben{float:left;}<br/>
+        }<br/>
+        <&nbsp;img src ="Bai.jpg" id ="ben"/><br/>
+        <&nbsp;p>白白呀，喜欢呢，wuli帅白<&nbsp;/p><br/>
+        <img src ="img/Bai.jpg" id ="ben"/>
+        <p>白白呀，喜欢呢，wuli帅白</p>
+        <div id ="ko"> </div>
+        浮动的影响：<br/>
+        &nbsp;&nbsp;并排显示<br/>
+        &nbsp;&nbsp;父元素高度坍塌<br/>
+        清除浮动(clear) ———— 父元素设置固定的高度<br/>
+        &nbsp;&nbsp;用来设置该元素边上没有其他元素可以浮动<br/>
+        &nbsp;&nbsp;clear:left/right/both/none<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left：不允许左边有浮动的元素<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right：不允许右边有浮动的元素<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;both：不允许左右两边有浮动的元素<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none：默认值，可以浮动<br/>
+        https://segmentfault.com/a/1190000010252809<br/>
+        清除浮动 ———— 伪元素 :after :before,并搭配属性clear:both;<br/>
+        代码：<br/>
+        style{<br/>
+           .clear:after{content:"";height:0;display:block;clear:both;}<br/>
+        }<br/>
+        <div class ="clear">
+        	<&nbsp;img src ="img/b.jpg" alt ="" style ="float:left;"/><br/>
+        	<img src ="img/b.jpg" alt ="" style ="float:left;"/>
+        	<p>慕课网是垂直的互联网IT技能免费学习网站。以独家视频教程、在线编程工具、学习计划、
+        	   问答社区为核心特色。在这里，你可以找到最好的互联网技术牛人</p>
+        </div>
+        注意：应用在包含浮动元素的父级元素上。<br/>
+        布局方法：<br/>
+        溢出处理 ———— overflow,定义溢出元素内容区的内容会如何处理<br/>
+        <table border ="1px" cellpadding ="0" cellspacing ="0">
+        	<tr>
+        		<th>值</th>
+        		<th>描述</th>
+        	</tr>
+        	<tr>
+        		<td>visible</td>
+        		<td>默认值。内容不会被修剪，会呈现在元素框之外</td>
+        	</tr>
+        	<tr>
+        		<td>hidden</td>
+        		<td>内容会被修剪，并且其余内容是不可见的</td>
+        	</tr>
+        	<tr>
+        		<td>scroll</td>
+        		<td>内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容</td>
+        	</tr>
+        	<tr>
+        		<td>auto</td>
+        		<td>如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容</td>
+        	</tr>
+        	<tr>
+        		<td>inherit</td>
+        		<td>规定应该从父元素继承overflow属性的值</td>
+        	</tr>
+        </table>
+        清除浮动 ———— overflow:hidden;<br/>
+        &nbsp;&nbsp;父元素不设高度并且子元素浮动时，使父元素高度自动适应子元素高度<br/>
+        &nbsp;&nbsp;父元素设置的高度或宽度小于子元素时，使父元素出现相应滚动条或隐藏子元素超出部分内容<br/>
+        https://www.jianshu.com/p/7e04ed3f4bea<br/>
+        浮动(float)注意事项：<br/>
+        <ul>
+        	<li>浮动元素距离父元素边框的位置，是该侧的父元素 padding + 自身 margin 的值
+        	</li>
+        	<li>通常不会超过父元素的边界</li>
+        	<li>元素一旦浮动就不属于父元素了</li>
+        	<li>浮动元素不会相互重叠</li>
+        	<li>不能上下浮动，通常只设一种浮动即可</li>
+        	<li>如果父元素宽度不够，浮动元素会另起一行显示</li>
+        </ul>
+        如何使得图片和段落之间有空白间隙？<br/>
+        1.img{padding-right:20px;} 对<br/>
+        2.img{margin-right:20px;} &nbsp;&nbsp;对<br/>
+        3.p{padding-left:20px;} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;错<br/>
+        4.p{margin-left:20px;} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;错<br/>
+        定位 ———— position<br/>
+        <table border ="1" cellpadding ="0" cellspacing ="0">
+        	<tr>
+        		<th>属性</th>
+        		<th>常用值</th>
+        		<th>说明</th>
+        	</tr>
+        	<tr>
+        		<td rowspan ="4">position</td>
+        		<td> static</td>
+        		<td>默认值。没有定位，元素出现在正常的流中</td>
+        	</tr>
+        	<tr>
+        		<td>relative</td>
+        		<td>相对定位，相对于其正常位置进行定位</td>
+        	</tr>
+        	<tr>
+        		<td>absolute</td>
+        		<td>绝对定位，相对于stasic定位以外的第一个有定位属性的父元素进行定位</td>
+        	</tr>
+        	<tr>
+        		<td>fixed</td>
+        		<td>固定定位，相对于浏览器窗口进行定位</td>
+        	</tr>
+        </table>
+        相对定位 ———— position:relative;<br/>
+        &nbsp;&nbsp;与left，right，top，bottom等属性共同使用<br/>
+        &nbsp;&nbsp;以自身本应在的位置为参照物<br/>
+        &nbsp;&nbsp;保留自身位置<br/>
+        代码：详见demo7-11.html<br/>
+        绝对定位 ———— position:absolute;<br/>
+        <ul>
+        	<li>与left、right、top、bottom等属性共同使用</li>
+        	<li>若祖先元素<span id ="r">已</span>定位，则以该祖先元素为参照物</li>
+        	<li>若祖先元素<span id ="r">未</span>定位，则以body元素为参照物</li>
+        	<li>不保留自身位置</li>
+        </ul>
+        代码：详见demo7-12.html<br/>
+        绝对定位参照物 ———— 祖先元素<br/>
+        &nbsp;&nbsp;position:absolute; 对<br/>
+        &nbsp;&nbsp;position:relative; 对<br/>
+        &nbsp;&nbsp;position:relative; 错<br/>
+        绝对定位对称设置<br/>
+         div.parent{position:relative;}<br/>
+         代码：详见demo7-13.html<br/>
+        固定定位 ———— position:fixed;<br/>
+        &nbsp;&nbsp;与left、 right、top、bottom等属性共同使用<br/>
+        &nbsp;&nbsp;以浏览器窗口为参照物进行定位<br/>
+        布局方法<br/>
+        &nbsp;&nbsp;文档流：<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通流(Normal flow):盒子依次排放<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浮动(Floats):浮动盒子会浮动到当前行的开始
+        或尾部位置<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绝对定位(Absolute positioning):
+        盒子从普通流中被移除，不影响普通流的布局<br/>
+        https://www.w3.org/TR/CSS22/visuren.html#float-position<br/>    
+        https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Visual_formatting_model<br/>
+        https://segmentfault.com/a/1190000013023485<br/>   
+        float和position不同点<br/>
+        &nbsp;&nbsp;position与top、left等配套使用<br/>
+        &nbsp;&nbsp;float位置移动通过margin、padding等实现<br/>
+        &nbsp;&nbsp;布局通常使用float,而不是position<br/>
+        堆叠顺序 ———— z-index<br/>
+        <ul>
+        	<li>用于体现元素在z轴空间的堆叠关系</li>
+        	<li>仅能在定位元素上奏效</li>
+        	<li>大部分情况以数字为取值</li>
+        	<li>可谓多个元素设置</li>
+        </ul>
+        <h2>页面搭建</h2>
+        网页开发基本流程<br/>
+        <ul>
+        	<li>需求获取</li>
+        	<li>制作UI效果图</li>
+        	<li>网页设计与实现<br/>
+        		<ul>
+        			<li>分析网页结构</li>
+        			<li>用HTML实现网页结构</li>
+        			<li>用CSS实现网页结构布局</li>
+        			<li>填充网页内容</li>
+        			<li>修饰网页样式</li>
+        		</ul>
+        	</li>
+        	<li>调整浏览器兼容性</li>
+        	<li>网站上线运营</li>
+        </ul>
+        The end
 	</body>
 </html>
